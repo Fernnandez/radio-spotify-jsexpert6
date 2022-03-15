@@ -65,7 +65,9 @@ describe('#Routes - test suite for api response', () => {
 
     await handler(...params.values());
 
-    expect(Controller.prototype.getFileStream).toBeCalledWith(pages.controllerHTML);
+    expect(Controller.prototype.getFileStream).toBeCalledWith(
+      pages.controllerHTML
+    );
     expect(mockFileStream.pipe).toBeCalledWith(params.response);
   });
 
