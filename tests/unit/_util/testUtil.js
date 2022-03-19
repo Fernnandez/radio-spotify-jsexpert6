@@ -1,5 +1,6 @@
 /* istanbul ignore file */
 import { jest } from '@jest/globals';
+
 import { Readable, Writable } from 'stream';
 
 export default class TestUtil {
@@ -50,4 +51,5 @@ export default class TestUtil {
       ...data,
     };
   }
+
 }
